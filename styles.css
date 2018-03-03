@@ -1,16 +1,35 @@
 img {
-    width: 400px;
+    width: 300px;
 }
 body{
     text-align:center;
     font-family: "Lucida Console", Monaco, monospace;
-    background-image: url("https://i.imgur.com/RdAl0wC.gif")
+    font-size: 20pt;
+    background-image: url("https://i.imgur.com/RdAl0wC.gif");
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    animation-delay: 10s;
     
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#pic{
+    float: right;
+}
+#rick{
+    float:left;
 }
 #static{
     padding:10px;
-    border:100px;
-    border-image:url("https://media.giphy.com/media/sIIhZliB2McAo/giphy.gif");
+    float:right;
+    border:100px solid;
+    border-image:url("https://media.giphy.com/media/sIIhZliB2McAo/giphy.gif") 100 round;
+}
+#annoy{
+    display:inline-block;
 }
 @keyframes example {
     0% {background-color: purple;}

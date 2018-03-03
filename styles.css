@@ -4,6 +4,50 @@ img {
 body{
     text-align:center;
     font-family: "Lucida Console", Monaco, monospace;
-    background:lime;
+    background-image: url("https://i.imgur.com/RdAl0wC.gif")
     
+}
+#static{
+    padding:10px;
+    border:100px;
+    border-image:url("https://media.giphy.com/media/sIIhZliB2McAo/giphy.gif");
+}
+@keyframes example {
+    0% {background-color: purple;}
+    25% {background-color: green;}
+    50% {background-color: black;}
+    75% {background-color: pink;}
+    100% {background-color: cyan;}
+}
+@keyframes example2 {
+    0% {background-color: purple;}
+    25% {background-color: green;}
+    50% {background-color: black;}
+    75% {background-color: pink;}
+    100% {background-color: cyan;}
+}
+p{
+    background-color:purple;
+    animation-name: example;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    color:yellow;
+}
+h1{
+    color:orange;
+    background-color:cyan;
+    animation-name: example;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+
+
+#hackerGif{
+    height:800px;
+    float:left;
+    vertical-align:top;
+    border-radius: 10%;
 }
